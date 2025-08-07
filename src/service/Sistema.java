@@ -9,7 +9,8 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
+//classe principal de funcionamento do projeto até o momento
+//primeira vez utilizando o metodo iniciar
 public class Sistema {
 
     private List<Usuario> usuarios = new ArrayList<>();
@@ -20,9 +21,9 @@ public class Sistema {
         int opcao;
         do {
             System.out.println("\n===== MENU =====");
-            // opções
-            opcao = scanner.nextInt(); // lê o número digitado
-            scanner.nextLine(); // limpa a quebra de linha
+            //menu de opções para a criação
+            opcao = scanner.nextInt();
+            scanner.nextLine();
 
             switch (opcao) {
                 case 1 -> cadastrarUsuario();
@@ -33,7 +34,6 @@ public class Sistema {
                 case 0 -> System.out.println("Encerrando...");
                 default -> System.out.println("Opção inválida.");
             }
-
         } while (opcao != 0);
     }
 
