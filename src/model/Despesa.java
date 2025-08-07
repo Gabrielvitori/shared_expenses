@@ -32,5 +32,43 @@ public class Despesa {
         return divisoes;
     }
 
-    // Getters e Setters
+    public LocalDate getData() {
+        return data;
+    }
+
+    public void setData(LocalDate data) {
+        this.data = data;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public void setDivisoes(List<DivisaoDespesa> divisoes) {
+        this.divisoes = divisoes;
+    }
+
+    public Grupo getGrupo() {
+        return grupo;
+    }
+
+    public void setGrupo(Grupo grupo) {
+        this.grupo = grupo;
+    }
+
+    public Usuario getPagador() {
+        return pagador;
+    }
+
+    public void setPagador(Usuario pagador) {
+        this.pagador = pagador;
+    }
+
+    public double getValorTotal() {
+        return valorTotal;
+    }
+
+    public void setValorTotal(double valorTotal) {
+        this.valorTotal = valorTotal;
+    }
 }

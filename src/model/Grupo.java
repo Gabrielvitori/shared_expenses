@@ -21,5 +21,27 @@ public class Grupo {
         despesas.add(despesa);
     }
 
-    // Getters e Setters
+    public List<Despesa> getDespesas() {
+        return despesas;
+    }
+
+    public void setDespesas(List<Despesa> despesas) {
+        this.despesas = despesas;
+    }
+
+    public List<Usuario> getMembros() {
+        return membros;
+    }
+
+    public void setMembros(List<Usuario> membros) {
+        this.membros = membros;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 }
